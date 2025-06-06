@@ -1,5 +1,12 @@
 # go-simple-chat part1
-
+## Contents
+- [Introduction](#introduction)
+- [Example](#example)
+- [Server-client message flow](#server-client-message-flow)
+- [Backend](#backend)
+- [Frontend](#frontend)
+- [Installation](#installation)
+- [Reference](#reference)
 ## Introduction
 A simple real-time chat application built with React (frontend) and Go (backend) using WebSocket for real-time communication
 ## Example
@@ -15,7 +22,7 @@ graph TD;
   WP --> WS[WebSocket Write];
   WS --> FE[Frontend socket.onmessage];
 ```
-## Benefits of using both `broadcasst` and client `send` channel
+## Benefits of using both `broadcast` and client `send` channel
 - Decouples message reception and delivery
 - Prevents blocking from slow or disconnected clients
 ## Backend
